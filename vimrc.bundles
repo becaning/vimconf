@@ -500,8 +500,20 @@ let python_highlight_all = 1
 " ###### Golang #########
 " 1.install golang and install gocode 'go get github.com/nsf/gocode'
 " 2.make sure gocode in your path: `which gocode` (add $GOPATH/bin to you $PATH)
-Bundle 'Blackrush/vim-gocode'
-" Bundle 'fatih/vim-go.git'
+" Bundle 'Blackrush/vim-gocode'
+Bundle 'fatih/vim-go'
+" vimgo {{{
+    let g:go_highlight_functions = 1
+    let g:go_highlight_methods = 1
+    let g:go_highlight_structs = 1
+    let g:go_highlight_operators = 1
+    let g:go_highlight_build_constraints = 1
+
+    " let g:go_fmt_fail_silently = 1
+    let g:go_fmt_command = "goimports"
+    let g:go_fmt_autosave = 0
+    let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
+" }}}
 
 " ###### Ruby #########
 " Bundle 'vim-ruby/vim-ruby'

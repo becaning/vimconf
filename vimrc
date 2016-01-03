@@ -126,6 +126,9 @@ set showmode
 set scrolloff=7
 
 set winwidth=79
+" 80字符参考线
+set textwidth=79
+set colorcolumn=+1
 
 " 命令行（在状态行下）的高度，默认为1，这里是2
 set statusline=%<%f\ %h%m%r%=%k[%{(&fenc==\"\")?&enc:&fenc}%{(&bomb?\",BOM\":\"\")}]\ %-14.(%l,%c%V%)\ %P
